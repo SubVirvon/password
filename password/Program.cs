@@ -24,12 +24,14 @@ namespace password
             {
                 int attempt = attemptsCount - i;
                 Console.Write("Осталось попыток: " + attempt + "\nВведите пароль: ");
+
                 if(password == Console.ReadLine())
                 {
                     isLocked = false;
                     Console.Clear();
                     break;
                 }
+
                 Console.Clear();
             }
 
